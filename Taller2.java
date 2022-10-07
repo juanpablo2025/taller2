@@ -63,7 +63,7 @@ public class Taller2 {
             System.out.print("\n Altura:" + altura);
             System.out.print("\n Base:" + base + "\n\n");
 
-            Taller2.main(null);
+            Taller2.main(null);osasss
 
         }
         /*------------------------------------1)punto------------------------------------------------------------
