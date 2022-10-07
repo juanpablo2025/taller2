@@ -134,15 +134,106 @@ public class Taller2 {
          */
         if (i == 4) {
             System.out.print(i + ") "
-                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+                    + "4. Elaborar un algoritmo que le permita al usuario ingresar los nombres y las edades de 3 hermanos y el computador le muestre los 3 nombres y el promedio de edad de ellos.");
+
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita nombre hermano 1");
+            String he = a.next();
+
+            Scanner aa = new Scanner(System.in);
+            System.out.println("\n Digita la edad");
+            int e = aa.nextInt();
+
+            Scanner b = new Scanner(System.in);
+            System.out.println("\n Digita nombre hermano 2");
+            String her = b.next();
+
+            Scanner bb = new Scanner(System.in);
+            System.out.println("\n Digita la edad");
+            int ed = bb.nextInt();
+
+            Scanner c = new Scanner(System.in);
+            System.out.println("\n Digita nombre hermano 3");
+            String herm = c.next();
+
+            Scanner cc = new Scanner(System.in);
+            System.out.println("\n Digita la edad");
+            int eda = cc.nextInt();
+
+            int promedio = (e + ed + eda) / 3;
+
+            System.out.print("\n hermano1:" + he);
+            System.out.print("\n edad:" + e);
+            System.out.print("\n hermano2:" + her);
+            System.out.print("\n edad:" + ed);
+            System.out.print("\n hermano3:" + herm);
+            System.out.print("\n edad:" + eda);
+
+            System.out.print("\n\n Promedio:" + promedio + "\n\n");
+
+            Taller2.main(null);
         }
         if (i == 5) {
             System.out.print(i + ") "
-                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+                    + "Elaborar un algoritmo que le permita al usuario ingresar la altura y la base de un triángulo y el radio de un círculo y le muestre en la pantalla el área de estas dos figuras.");
+
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita el base del triangulo");
+            int base = a.nextInt();
+
+            Scanner h = new Scanner(System.in);
+            System.out.println("\n Digita la altura del triangulo");
+            int altura = h.nextInt();
+
+            Scanner c = new Scanner(System.in);
+            System.out.println("\n Digita el radio del circulo");
+            int radio = c.nextInt();
+
+            int areat = (base * altura) / 2;
+            double areac = (radio ^ 2) * 3.14;
+
+            System.out.print("\n Base:" + base);
+            System.out.print("\n Altura:" + altura);
+            System.out.print("\n Area del triangulo:" + areat);
+
+            System.out.print("\n Area del circulo:" + areac + "\n\n");
+
+            Taller2.main(null);
         }
         if (i == 6) {
             System.out.print(i + ") "
-                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+                    + "Crear un algoritmo que le pida al usuario los datos de un trabajador así: El número de horas trabajadas en el mes, el salario básico hora, la cantidad de años que tiene de laborar en la empresa y el valor que le deducen mensualmente. El algoritmo le debe mostrar: El salario bruto, el valor de la bonificación ($30.000 por cada año laborado), el valor de las deducciones y el salario neto");
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita nombre del usuario");
+            String he = a.next();
+
+            Scanner aa = new Scanner(System.in);
+            System.out.println("\n el numero de horas trabajadas");
+            int e = aa.nextInt();
+
+            Scanner bb = new Scanner(System.in);
+            System.out.println("\n salario basico hora");
+            double ed = bb.nextDouble();
+
+            Scanner c = new Scanner(System.in);
+            System.out.println("\n deducciones");
+            int d = c.nextInt();
+
+            Scanner cc = new Scanner(System.in);
+            System.out.println("\n cantidad de años trabajando en la empresa");
+            int eda = cc.nextInt();
+
+            int promedio = 3;
+
+            System.out.print("\n empleado:" + he);
+            System.out.print("\n horas trabajadas:" + e);
+            System.out.print("\n salario basico:" + ed);
+            System.out.print("\n deducciones:" + d);
+            System.out.print("\n años en la empresa:" + eda);
+
+            System.out.print("\n\n Promedio:" + promedio + "\n\n");
+
+            Taller2.main(null);
         }
         if (i == 7) {
             System.out.print(i + ") "
@@ -159,6 +250,10 @@ public class Taller2 {
         if (i == 10) {
             System.out.print(i + ") "
                     + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 0) {
+            System.out.print("Cerrando...");
+            System.exit(0);
         }
     }
 
