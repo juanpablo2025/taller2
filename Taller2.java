@@ -23,63 +23,143 @@ salario mensual más los ingresos adicionales menos los gastos. Se debe mostrar 
 17. Escriba un algoritmo que le permita al propietario de un bus ingresar el número de pasajeros transportados en un día, el valor del pasaje y el valor pagado por combustible. El programa le debe mostrar el total producido por el bus, el valor pagado al conductor (que es el 10% del total producido) y la ganancia neta (producido menos los gastos).
  */
 package taller2;
+
 import java.util.Scanner;
+
 /**
  *
  * @author FX6300
  * 
  */
-public class Taller2 
-{
+public class Taller2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Digita un número del taller");
-       int i = sc.nextInt();
-       
-       if(i==1)
-       {
-       System.out.print(i+") " + "Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==2)
-       {
-       System.out.print(i+") " + "Elaborar un algoritmo que le muestre al usuario el dinero que pude ahorrar en un año. El usuario ingresará su salario mensual, el monto de los ingresos extras mensuales y el valor de los gastos mensuales.");    
-       }
-       if(i==3)
-       {
-       System.out.print(i+") " + "En un lavadero de vehículos se relacionan al final del día la cantidad de taxis que se lavaron, la cantidad de buses, la cantidad de particulares y la cantidad de motos.");    
-       }
-       if(i==4)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==5)
-       {
-       System.out.print(i+") "+ "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==6)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==7)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==8)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==9)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
-       if(i==10)
-       {
-       System.out.print(i+") " + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");    
-       }
+        /*------------------------------------Menu-------------------------------------------------------------
+         */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digita un número del taller o digita 0(cero)para salir");
+        int i = sc.nextInt();
+        /*------------------------------------Menu-------------------------------------------------------------
+         */
+        /*------------------------------------1)punto------------------------------------------------------------
+         */
+        if (i == 1) {
+            System.out.print(i + ") "
+                    + "Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura1.");
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita el area del triangulo");
+            int area = a.nextInt();
+
+            Scanner h = new Scanner(System.in);
+            System.out.println("\n Digita la altura del triangulo");
+            int altura = h.nextInt();
+
+            double base = (area * altura / 2);
+
+            System.out.print("\n Area:" + area);
+            System.out.print("\n Altura:" + altura);
+            System.out.print("\n Base:" + base + "\n\n");
+
+            Taller2.main(null);
+
+        }
+        /*------------------------------------1)punto------------------------------------------------------------
+         */
+        /*------------------------------------2)punto------------------------------------------------------------
+         */
+        if (i == 2) {
+            System.out.print(i + ") "
+                    + "Elaborar un algoritmo que le muestre al usuario el dinero que pude ahorrar en un año. El usuario ingresará su salario mensual, el monto de los ingresos extras mensuales y el valor de los gastos mensuales.");
+
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita tu salario mensual");
+            double sm = a.nextDouble();
+
+            Scanner b = new Scanner(System.in);
+            System.out.println("\n Digita tus ingresos extra");
+            double se = b.nextDouble();
+
+            Scanner c = new Scanner(System.in);
+            System.out.println("\n Digita tus gastos mensuales");
+            double gm = c.nextDouble();
+
+            double ahn = (sm + se - gm) * 12;
+
+            System.out.print("\n Salario Mensual:" + sm);
+            System.out.print("\n Salario Extra:" + se);
+            System.out.print("\n Gastos mensuales:" + gm);
+            System.out.print("\n Ganacias Anuales:" + ahn + "\n\n");
+
+            Taller2.main(null);
+        }
+        /*------------------------------------2)punto------------------------------------------------------------
+         */
+        /*------------------------------------3)punto------------------------------------------------------------
+         */
+        if (i == 3) {
+            System.out.print(i + ") "
+                    + "En un lavadero de vehículos se relacionan al final del día la cantidad de taxis que se lavaron, la cantidad de buses, la cantidad de particulares y la cantidad de motos.");
+
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de taxis lavados");
+            int tax = a.nextInt();
+
+            Scanner b = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de buses lavados");
+            int bus = b.nextInt();
+
+            Scanner c = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de particulares lavados");
+            int par = c.nextInt();
+
+            Scanner d = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de motos lavadas");
+            int moto = d.nextInt();
+
+            int total = (tax + bus + par + moto);
+
+            System.out.print("\n Taxi:" + tax);
+            System.out.print("\n Buses:" + bus);
+            System.out.print("\n Particulares:" + par);
+            System.out.print("\n Motos:" + moto);
+            System.out.print("\n total:" + total + "\n\n");
+
+            Taller2.main(null);
+        }
+
+        /*------------------------------------3)punto------------------------------------------------------------
+         */
+        if (i == 4) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 5) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 6) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 7) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 8) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 9) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
+        if (i == 10) {
+            System.out.print(i + ") "
+                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+        }
     }
-    
+
 }
