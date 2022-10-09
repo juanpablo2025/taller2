@@ -138,6 +138,9 @@ public class Taller2 {
 
         /*------------------------------------3)punto------------------------------------------------------------
          */
+        /*------------------------------------4)punto------------------------------------------------------------
+         */
+
         if (i == 4) {
             System.out.print(i + ") "
                     + "4. Elaborar un algoritmo que le permita al usuario ingresar los nombres y las edades de 3 hermanos y el computador le muestre los 3 nombres y el promedio de edad de ellos.");
@@ -179,6 +182,10 @@ public class Taller2 {
 
             Taller2.main(null);
         }
+        /*------------------------------------4)punto------------------------------------------------------------
+         */
+        /*------------------------------------5)punto------------------------------------------------------------
+         */
         if (i == 5) {
             System.out.print(i + ") "
                     + "Elaborar un algoritmo que le permita al usuario ingresar la altura y la base de un triángulo y el radio de un círculo y le muestre en la pantalla el área de estas dos figuras.");
@@ -206,6 +213,10 @@ public class Taller2 {
 
             Taller2.main(null);
         }
+        /*------------------------------------5)punto------------------------------------------------------------
+         */
+        /*------------------------------------6)punto------------------------------------------------------------
+         */
         if (i == 6) {
             System.out.print(i + ") "
                     + "Crear un algoritmo que le pida al usuario los datos de un trabajador así: El número de horas trabajadas en el mes, el salario básico hora, la cantidad de años que tiene de laborar en la empresa y el valor que le deducen mensualmente. El algoritmo le debe mostrar: El salario bruto, el valor de la bonificación ($30.000 por cada año laborado), el valor de las deducciones y el salario neto");
@@ -241,18 +252,66 @@ public class Taller2 {
 
             Taller2.main(null);
         }
+        /*------------------------------------6)punto------------------------------------------------------------
+         */
+        /*------------------------------------7)punto------------------------------------------------------------
+         */
         if (i == 7) {
             System.out.print(i + ") "
-                    + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+                    + "Una persona posee dos buses, al final del día desea conocer el producido por cada bus y el total del producido. Por cada bus se digita el número de pasajeros transportados y el valor del pasaje.");
+
+            Scanner a = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de pasajeros del bus 1 ");
+            int bus1 = a.nextInt();
+
+            Scanner b = new Scanner(System.in);
+            System.out.println("\n Digita la cantidad de pasajeros del bus 2 ");
+            int bus2 = b.nextInt();
+
+            int pasaje1 = 3000;
+            int pasaje2 = 2500;
+
+            int totalt = bus1 * pasaje1;
+            int totalb = bus2 * pasaje2;
+            int total = (bus1 + bus2);
+
+            int neto = totalt + totalb;
+
+            System.out.print("\n Pasajeros bus1:" + bus1);
+            System.out.print("\n Valor pasaje:" + pasaje1);
+            System.out.print("\n producido:" + totalt);
+
+            System.out.print("\n\n Pasajeros bus2:" + bus2);
+            System.out.print("\n Valor pasaje:" + pasaje2);
+            System.out.print("\n producido:" + totalb);
+
+            System.out.print("\n\n Total pasajeros:" + total);
+            System.out.print("\n Realizado:" + neto + "\n\n");
+
+            Taller2.main(null);
         }
+        /*------------------------------------7)punto------------------------------------------------------------
+         */
+        /*------------------------------------8)punto------------------------------------------------------------
+         */
         if (i == 8) {
             System.out.print(i + ") "
                     + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+
         }
+        /*------------------------------------8)punto------------------------------------------------------------
+         */
+        /*------------------------------------9)punto------------------------------------------------------------
+         */
         if (i == 9) {
             System.out.print(i + ") "
                     + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
+
         }
+        /*------------------------------------9)punto------------------------------------------------------------
+        */
+        /*------------------------------------10)punto------------------------------------------------------------
+         */
         if (i == 10) {
             System.out.print(i + ") "
                     + "Te Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura.");
