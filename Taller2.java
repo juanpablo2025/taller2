@@ -120,12 +120,18 @@ public class Taller2 {
             int moto = d.nextInt();
 
             int total = (tax + bus + par + moto);
+            int totalt = tax * 3000;
+            int totalb = bus * 1000;
+            int totalp = par * 5000;
+            int totalm = moto * 2000;
+            int neto = totalt + totalb + totalp + totalm;
 
             System.out.print("\n Taxi:" + tax);
             System.out.print("\n Buses:" + bus);
             System.out.print("\n Particulares:" + par);
             System.out.print("\n Motos:" + moto);
-            System.out.print("\n total:" + total + "\n\n");
+            System.out.print("\n total:" + total);
+            System.out.print("\n Realizado:" + neto + "\n\n");
 
             Taller2.main(null);
         }
